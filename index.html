@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+    <body>
+        <h1>Working with Images</h1>
+
+        <h2>Portrait and Landscape</h2>
+        <picture>
+            <source media="(orientation:portrait)" srcset="Images/calgary-tower-portrait.webp">
+            <img src="Images/calgary-tower-landscape.webp" alt="A photograph of the Calgary Tower's 
+            Observation deck, from the street below" title="Copyright Dan Stephenson 2025"
+            width="750" height="498">
+        </picture>
+
+        <h2>Desktop First</h2>
+        <picture>
+            <source media="(max-width:450px)" srcset="Images/small.png">
+            <source media="(max-width:650px)" srcset="Images/medium.png">
+            <img src="Images/large.png" alt="The banner graphic for the website"
+            loading="lazy">
+        </picture>
+        
+        <h2>Mobile First</h2>
+            <picture>
+                <source media="(min-width:1200px)" srcset="Images/sunglasses-full.webp">
+                <source media="(min-width:650px)" srcset="Images/sunglasses-med.webp">
+                <img src="Images/sunglasses-small.webp" alt="Sunglasses on a mound ofsand">
+            </picture>
+    </body>
+</html>
