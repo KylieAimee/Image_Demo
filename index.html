@@ -15,7 +15,7 @@
             <source media="(orientation:portrait)" srcset="Images/calgary-tower-portrait.webp">
             <img src="Images/calgary-tower-landscape.webp" alt="A photograph of the Calgary Tower's 
             Observation deck, from the street below" title="Copyright Dan Stephenson 2025"
-            width="750" height="498">
+            loading="lazy" styles="display:block;margin:0 auto;max-width:100%;height=auto;">
         </picture>
 
         <h2>Desktop First</h2>
@@ -23,14 +23,15 @@
             <source media="(max-width:450px)" srcset="Images/small.png">
             <source media="(max-width:650px)" srcset="Images/medium.png">
             <img src="Images/large.png" alt="The banner graphic for the website"
-            loading="lazy">
+            loading="lazy" style="max-width:100%; height= auto;">
         </picture>
         
         <h2>Mobile First</h2>
             <picture>
                 <source media="(min-width:1200px)" srcset="Images/sunglasses-full.webp">
                 <source media="(min-width:650px)" srcset="Images/sunglasses-med.webp">
-                <img src="Images/sunglasses-small.webp" alt="Sunglasses on a mound ofsand">
+                <img src="Images/sunglasses-small.webp" alt="Sunglasses on a mound of sand"
+                styles="max-width:100%; height=auto;">
             </picture>
     </body>
 </html>
